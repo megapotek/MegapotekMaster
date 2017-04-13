@@ -1,0 +1,32 @@
+{
+  "screenshots": [
+    {
+      "id_obat": "Obat Kurap",
+      "img": "assets/images/space1.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "liked": "0",
+      "harga": "4000"
+    },
+    {
+      "id_obat": "Obat Panu",
+      "img": "assets/images/space2.jpg",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.",
+      "liked": "0",
+      "harga": "6000"
+    },
+    {
+      "id_obat": "Obat Batuk",
+      "img": "assets/images/space3.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "liked": "0",
+      "harga": "2000"
+    },
+    {
+      "id_obat": "Obat Katarak",
+      "img": "assets/images/space1.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "liked": "0",
+      "harga": "1000"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">Data Obat</h1>
+    <p>Berikut daftar obat yang ada</p>
+  </div>
+</div>
+
+<div class="container-fluid">
+
+  <md-grid-list cols="4">
+    <md-grid-tile [style.background]="lightblue"
+                  *ngFor="let item of collectables">
+      <md-card>
+        <md-card-title style="background-color: darkturquoise; padding: 0.4em; font-size: 14pt">
+            {{item.id_obat}}
+        </md-card-title>
+        <md-card-avatar>
+          <img src="{{ item.img_src }}">
+        </md-card-avatar>
+
+        <md-card-content>
+          <p>{{item.description}}</p>
+        </md-card-content>
+        <md-card-actions>
+          <button md-button disabled>
+            <md-icon class="md-18">attach_money</md-icon> {{item.price}}
+          </button>
+          <button md-button (click)="addToCart(item)">
+            <md-icon class="md-18">add_shopping_cart</md-icon> add to cart
+          </button>
+        </md-card-actions>
+      </md-card>
+    </md-grid-tile>
+    &nbsp;
+  </md-grid-list>
+
+</div>
+
+
+

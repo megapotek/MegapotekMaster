@@ -1,3 +1,120 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container fullscreen="">
+  <md-sidenav #start>
+    <md-nav-list>
+      <a md-list-item style="text-align: center" >Menu 1</a>
+      <a md-list-item style="text-align: center" >Menu 2</a>
+    </md-nav-list>
+    <hr>
+    <button md-button (click)="start.close()">Log-Out</button>
+  </md-sidenav>
+
+  <md-toolbar color="primary" style="background-color: #54cfa3">
+    <button md-icon-button (click)="start.open()">
+      <md-icon>menu</md-icon>
+    </button>
+    <span routerLink="home">Megapotek</span>
+
+    <span class="spacer">&nbsp;</span>
+
+
+    <md-input-container class="bigClass" flex>
+      <input mdInput/>
+    </md-input-container>
+
+    <button md-icon-button>
+      <md-icon>search</md-icon>
+    </button>
+
+
+
+    <button md-icon-button [mdMenuTriggerFor]="menu">
+      <md-icon>account_circle</md-icon>
+    </button>
+
+    <md-menu #menu="mdMenu">
+      <button md-menu-item routerLink="/login">
+        <md-icon>fingerprint</md-icon>
+        <span>Login</span>
+      </button>
+
+      <button md-menu-item routerLink="/signup">
+        <md-icon>face</md-icon>
+        <span>Sign Up</span>
+      </button>
+
+      <button md-menu-item routerLink="/wishlist">
+        <md-icon>shopping_cart</md-icon>
+        <span>Wishlist</span>
+      </button>
+    </md-menu>
+
+    <!--<<md-toolbar-row color="primary">-->
+      <!--<span>Second Line</span>-->
+      <!--<span class="example-spacer"></span>-->
+      <!--<md-icon class="example-icon">verified_user</md-icon>-->
+    <!--</md-toolbar-row>-->
+  </md-toolbar>
+  <nav md-tab-nav-bar>
+    <span md-tab-link  routerLink="home" routerLinkActive #rla1="routerLinkActive" [active]="rla1.isActive" >Home</span>
+    <span md-tab-link  routerLink="about" routerLinkActive #rla2="routerLinkActive" [active]="rla2.isActive" >About</span>
+    <span md-tab-link  routerLink="dataobat" routerLinkActive #rla3="routerLinkActive" [active]="rla3.isActive" >Data Obat</span>
+  </nav>
+
+  <div layout="column" flex>
+    <router-outlet></router-outlet>
+  </div>
+
+</md-sidenav-container>
+
+
+
+
+
+
+
+<!--<nav class="navbar navbar-toggleable-md navbar-light fixed-top bg-cus-green">-->
+<!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--<span class="navbar-toggler-icon"></span>-->
+<!--</button>-->
+<!--<a routerLink="home" class="navbar-brand">Megapotek</a>-->
+
+<!--<div class="collapse navbar-collapse" id="navbarsExampleDefault">-->
+<!--<ul class="navbar-nav mr-auto">-->
+<!--<li class="nav-item active">-->
+<!--<a routerLink="about" class="nav-link" href="#">About<span class="sr-only">(current)</span></a>-->
+<!--</li>-->
+<!--<li class="nav-item">-->
+<!--<a routerLink="dataobat" class="nav-link" href="#">Data Obat</a>-->
+<!--</li>-->
+<!--<li>-->
+<!--<form class="form-inline my-2 my-lg-0" style="padding-left: 50pt">-->
+<!--<input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--<button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>-->
+<!--</form>-->
+<!--</li>-->
+<!--</ul>-->
+
+<!--<div class="btn-group-vertical" style="padding-right: 40pt">-->
+<!--<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--Login / Register-->
+<!--</button>-->
+
+<!--<div class="dropdown-menu">-->
+<!--<input name="username" type="text" placeholder="Username" size="15"/>-->
+<!--<div class="dropdown-divider"></div>-->
+<!--<input name="password" type="password" placeholder="Password" size="15"/>-->
+
+<!--<div class="dropdown-divider"></div>-->
+<!--<button class="btn btn-outline-success">Submit</button>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--</nav>-->
+
+
+
+
+<footer>
+  <p>&copy; Sabiqxs 2017</p>
+</footer>
