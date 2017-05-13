@@ -1,32 +1,96 @@
 {
-  "screenshots": [
+  "detailObat": [
     {
-      "id_obat": "Obat Kurap",
-      "img": "assets/images/space1.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "liked": "0",
-      "harga": "4000"
+      "id_obat": "Bisolvon",
+      "type": "obat ringan",
+      "description": "obat batuk dan pengencer dahak",
+      "price": "Rp 21.009,- / Blister",
+      "img_src": "gs://megapotek.appspot.com/obat_batuk/bisolvon.jpg"
     },
     {
-      "id_obat": "Obat Panu",
-      "img": "assets/images/space2.jpg",
-      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.",
-      "liked": "0",
-      "harga": "6000"
+      "id_obat": "Vicks 44",
+      "type": "obat ringan",
+      "description": "obat batuk berdahak dan batuk kering",
+      "price": "Rp 13.052,- / Botol",
+      "img_src": "gs://megapotek.appspot.com/obat_batuk/vicks.jpg"
     },
     {
-      "id_obat": "Obat Batuk",
-      "img": "assets/images/space3.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "liked": "0",
-      "harga": "2000"
+      "id_obat": "OBH Combi",
+      "type": "obat ringan",
+      "description": "obat batuk berdahak",
+      "price": "Rp 11.138,- / Botol",
+      "img_src": "gs://megapotek.appspot.com/obat_batuk/obh.jpg"
     },
     {
-      "id_obat": "Obat Katarak",
-      "img": "assets/images/space1.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "liked": "0",
-      "harga": "1000"
+      "id_obat": "Dumin",
+      "type": "obat ringan",
+      "description": "Pereda demam dan nyeri",
+      "price": "Rp 5.399,- / Strip",
+      "img_src": "gs://megapotek.appspot.com/obat_demam/dumin.jpg"
+    },
+    {
+      "id_obat": "Paracetamol",
+      "type": "obat ringan",
+      "description": "demam, sakit kepala dan sakit gigi",
+      "price": "Rp 2.089,- / Strip",
+      "img_src": "gs://megapotek.appspot.com/obat_demam/paracetamol.jpg"
+    },
+    {
+      "id_obat": "Sanmol",
+      "type": "obat ringan",
+      "description": "obat penurun panas anak dan bayi",
+      "price": "Rp 19.586,- / Botol",
+      "img_src": "gs://megapotek.appspot.com/obat_demam/sanmol.jpg"
+    },
+    {
+      "id_obat": "Inza",
+      "type": "obat ringan",
+      "description": "Meringankan gejala flu",
+      "price": "Rp 2.023,- / Strip",
+      "img_src": "gs://megapotek.appspot.com/obat_flu/inza.jpg"
+    },
+    {
+      "id_obat": "Mixagrip",
+      "type": "obat ringan",
+      "description": "Obat Flu dan Batuk",
+      "price": "Rp 1.893,- / Strip",
+      "img_src": "gs://megapotek.appspot.com/obat_flu/mixagrip.jpg"
+    },
+    {
+      "id_obat": "Procold",
+      "type": "obat ringan",
+      "description": "Hidung tersumbat, demam dan sakit kepala",
+      "price": "Rp 3.201,- / Strip",
+      "img_src": "gs://megapotek.appspot.com/obat_flu/mixagrip.jpg"
+    },
+    {
+      "id_obat": "Cataflam",
+      "type": "obat ringan",
+      "description": "anti inflamasi non steroid",
+      "price": "Rp 3.837,- / Tablet",
+      "img_src": "gs://megapotek.appspot.com/obat_sakit_gigi/cataflam.jpg"
+    },
+    {
+      "id_obat": "Ponstan",
+      "type": "obat ringan",
+      "description": "anti inflamasi dan antipiretik",
+      "price": "Rp 408,- / Tablet",
+      "img_src": "gs://megapotek.appspot.com/obat_sakit_gigi/ponstan.jpg"
+    },
+    {
+      "id_obat": "Captoril",
+      "type": "obat ringan",
+      "description": "Menurunkan tekanan darah, meningkatkan suplai darah",
+      "price": "Rp 153,- / Tablet",
+      "img_src": "gs://megapotek.appspot.com/obat_demam/captoril.jpg"
+    },
+    {
+      "id_obat": "Amlodifine",
+      "type": "obat ringan",
+      "description": "mengatasi serangan angina atau angin duduk",
+      "price": "Rp 1.485,- / Tablet",
+      "img_src": "gs://megapotek.appspot.com/amlodipine.jpg"
     }
+    
   ]
 }

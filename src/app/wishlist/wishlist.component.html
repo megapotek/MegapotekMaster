@@ -5,52 +5,37 @@
   </div>
 </div>
 
-<!--<div class="container">-->
-  <!--<div class="col-xs-12">-->
-    <!--<ul class="list-group" *ngIf="collectedItems.length > 0">-->
-      <!--<li class="list-group-item" *ngFor="let item of collectedItems">-->
-        <!--<span class="badge">{{ item.id_obat }}</span>-->
-        <!--<button class="btn btn-danger" (click)="onRemoveFromCollection(item)">Remove from Collection</button>&nbsp;-->
-        <!--{{ item.id_obat}}-->
-      <!--</li>-->
-    <!--</ul>-->
-    <!--<h3 *ngIf="collectedItems.length === 0">Start Adding Items to your Collection on the Market!</h3>-->
-  <!--</div>-->
-<!--</div>-->
-
 <div layout="column" flex>
+  <md-grid-list cols="4" rowHeight="440px" *ngIf="collectedItems.length > 0">
+    <md-grid-tile *ngFor="let item of collectedItems" [style.background]="'white'">
 
-  <md-grid-list  cols="4" *ngIf="collectedItems.length > 0">
-    <md-grid-tile [colspan]="1"
-                  [style.background]="lightblue"
-                  *ngFor="let item of collectedItems">
-      <md-card>
-        <h6 style="background-color: darkturquoise; padding: 0.7em">
+      <md-card [style.minHeight]="'100%'" [style.minWidth]="'100%'" [style.background]="'white'">
+        <md-card-title style="background-color: darkturquoise; padding: 0.4em; font-size: 14pt">
           {{item.id_obat}}
-        </h6>
-        <img md-card-lg-image src="{{ item.img_src }}">
+        </md-card-title>
+        <md-card-avatar>
+          <img src="{{ item.img_src }}">
+        </md-card-avatar>
         <md-card-content>
           <p>{{item.description}}</p>
         </md-card-content>
-        <md-card-actions>
+        <div class="md-actions" layout="row" layout-align="end center">
           <button md-button disabled>
-            <md-icon class="md-18">attach_money</md-icon> {{item.id_obat}}
+            {{item.price}}
           </button>
           <button md-button (click)="onRemoveFromCollection(item)">
-            <md-icon class="md-18">remove_shopping_cart</md-icon> Remove from Cart
+            <md-icon class="md-18">remove_shopping_cart</md-icon> Remove Cart
           </button>
-        </md-card-actions>
+        </div>
+        
       </md-card>
-    </md-grid-tile>
 
+    </md-grid-tile>
   </md-grid-list>
   <div class="container" *ngIf="collectedItems.length === 0">
     <div class="col-sm">
       <h3>Belum ada obat yang anda pilih</h3>
       <button md-button routerLink="/dataobat" style="background-color: #54cfa3; color: white">Beli Obat</button>
     </div>
-
   </div>
-
-
 </div>
